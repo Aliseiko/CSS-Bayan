@@ -79,3 +79,60 @@ h1 {
 .accordion__input:checked ~ .item__label .item__icon{
   transform: rotate(45deg);
 }
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 40vw;
+    padding: 1vw 0;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .item__label {
+    padding: 0.5vw;
+    transition: all .3s linear;
+  }
+
+  .item__name {
+    font-size: 2.2rem;
+  }
+
+  .item__label:hover,
+  .item__content:hover {
+    cursor: pointer;
+  }
+
+  .item__icon {
+    visibility: hidden;
+  }
+
+  .accordion:hover .item__icon {
+    visibility: visible;
+  }
+
+  .accordion:hover .item__name {
+    color: #ffffff;
+  }
+
+  .accordion__input:checked ~ .item__content,
+  .item__label:hover ~ .item__content,
+  .item__content:hover {
+    height: 32vw;
+  }
+
+  .accordion__input:active ~ .item__content ,
+  .accordion__input:active ~ .item__label {
+    filter: brightness(70%);
+  }
+
+  .accordion__input:active ~ .item__label .item__name {
+    color: #00ffff;
+  }
+
+  .accordion__item:hover > .item__label > .item__icon {
+    transform: rotate(45deg);
+  }
+}
