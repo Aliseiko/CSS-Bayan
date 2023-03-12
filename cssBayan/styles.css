@@ -160,3 +160,10 @@ h1 {
     width: 2rem;
   }
 }
+
+@media (min-width: 320px) {
+  .wrapper {
+    width: 100vw;
+    padding: 12vw 0;
+  }
+}
