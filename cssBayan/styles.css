@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.memes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 80%;
+  border: 0.125rem solid #ffffff;
+  margin-top: 1vh;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.item__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  background-color: rgb(255, 0, 0);
+}
+
+.item__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.item__content {
+  height: 0;
+  overflow: hidden;
+  border-top: none;
+  transition: all .3s linear;
+}
+
+.accordion__input:checked ~ .item__content{
+  height: 80vw;
+}
+
+.item__img {
+  display: block;
+  width: 100%;
+}
+
+.item__icon {
+  display: block;
+  width: 1.2rem;
+}
+
+.accordion__input:checked ~ .item__label .item__name {
+  color: #ffffff;
+}
+
+.accordion__input:checked ~ .item__label .item__icon{
+  transform: rotate(45deg);
+}
