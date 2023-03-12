@@ -80,6 +80,37 @@ h1 {
   transform: rotate(45deg);
 }
 
+@media (min-width: 320px) {
+  .wrapper {
+    width: 100vw;
+    padding: 12vw 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    padding: 3vw 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .item__label {
+    padding: 2vw;
+  }
+
+  .item__name {
+    font-size: 2rem;
+  }
+
+  .item__icon {
+    display: block;
+    width: 2rem;
+  }
+}
+
 @media (min-width: 1280px) {
   .wrapper {
     width: 40vw;
@@ -134,36 +165,5 @@ h1 {
 
   .accordion__item:hover > .item__label > .item__icon {
     transform: rotate(45deg);
-  }
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    width: 100vw;
-    padding: 3vw 0;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .item__label {
-    padding: 2vw;
-  }
-
-  .item__name {
-    font-size: 2rem;
-  }
-
-  .item__icon {
-    display: block;
-    width: 2rem;
-  }
-}
-
-@media (min-width: 320px) {
-  .wrapper {
-    width: 100vw;
-    padding: 12vw 0;
   }
 }
