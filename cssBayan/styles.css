@@ -136,3 +136,27 @@ h1 {
     transform: rotate(45deg);
   }
 }
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    padding: 3vw 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .item__label {
+    padding: 2vw;
+  }
+
+  .item__name {
+    font-size: 2rem;
+  }
+
+  .item__icon {
+    display: block;
+    width: 2rem;
+  }
+}
