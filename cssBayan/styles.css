@@ -82,14 +82,14 @@ h1 {
 
 @media (min-width: 320px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
     padding: 12vw 0;
   }
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
     padding: 3vw 0;
   }
 
