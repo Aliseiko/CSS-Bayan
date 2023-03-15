@@ -75,6 +75,44 @@ h1 {
   transform: rotate(45deg);
 }
 
+.accordion__input:active ~ .item__content ,
+.accordion__input:active ~ .item__label {
+  filter: brightness(70%);
+}
+
+.accordion__input:active ~ .item__label .item__name {
+  color: #000000;
+}
+
+@media (hover:hover) {
+  .accordion__item:hover > .item__label > .item__icon {
+    transform: rotate(45deg);
+  }
+
+  .accordion:hover .item__name {
+    color: #000000;
+  }
+
+  .item__label:hover,
+  .item__content:hover {
+    cursor: pointer;
+  }
+
+  .item__icon {
+    visibility: hidden;
+  }
+
+  .accordion:hover .item__icon {
+    visibility: visible;
+  }
+
+  .accordion__input:checked ~ .item__content,
+  .item__label:hover ~ .item__content,
+  .item__content:hover {
+    height: 32vw;
+  }
+}
+
 @media (min-width: 320px) {
   .wrapper {
     width: 100%;
@@ -126,26 +164,11 @@ h1 {
     font-size: 2.2rem;
   }
 
-  .item__label:hover,
-  .item__content:hover {
-    cursor: pointer;
-  }
-
   .item__icon {
     visibility: hidden;
   }
 
-  .accordion:hover .item__icon {
-    visibility: visible;
-  }
-
-  .accordion:hover .item__name {
-    color: #000000;
-  }
-
-  .accordion__input:checked ~ .item__content,
-  .item__label:hover ~ .item__content,
-  .item__content:hover {
+  .accordion__input:checked ~ .item__content {
     height: 32vw;
   }
 
@@ -156,9 +179,5 @@ h1 {
 
   .accordion__input:active ~ .item__label .item__name {
     color: #000000;
-  }
-
-  .accordion__item:hover > .item__label > .item__icon {
-    transform: rotate(45deg);
   }
 }
